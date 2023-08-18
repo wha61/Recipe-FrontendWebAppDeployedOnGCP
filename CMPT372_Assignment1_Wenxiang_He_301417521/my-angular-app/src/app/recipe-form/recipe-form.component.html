@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #00000021; 
+    }
+  </style>
+</head>
+<body>
+  <h1>Recipe App</h1>
+  <div class="my-nav">
+    <form class="form"> 
+      <div>
+        <label for="name">Recipe Name</label><br>
+        <input class="form-control" id="name" name="name" [(ngModel)]="recipe.name" required>
+      </div>
+    
+      <div>
+        <label for="ingredients">Ingredients</label><br>
+        <textarea class="form-control" id="ingredients" name="ingredients" [(ngModel)]="recipe.ingredients" required></textarea>
+      </div>
+    
+      <div>
+        <label for="directions">Directions</label><br>
+        <textarea class="form-control" id="directions" name="directions" [(ngModel)]="recipe.directions" required></textarea>
+      </div>
+      
+      <br>
+  
+      <div>
+        <button class="btn btn-primary" type="button" (click)="resetForm()">Reset</button> |
+        <button class="btn btn-primary" type="button" (click)="saveRecipe()">Save</button>
+      </div>
+    </form>
+  </div>
+
+  <br><br>
+
+</body>
+</html>
+
+  

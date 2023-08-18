@@ -1,0 +1,8 @@
+<div class="my-div" *ngIf="recipe">
+    <h2>{{ recipe.name }}</h2>
+    <p>Last Modified: {{ recipe.savedTime }} <button class="btn btn-primary float-right" type="button" (click)="close()">X</button></p> 
+    <p>Ingredients: <br><br>&nbsp;&nbsp;&nbsp;{{ recipe.ingredients }}</p>
+    <p>Directions: <br><br>&nbsp;&nbsp;&nbsp;{{ recipe.directions }}</p>
+</div>
+
+  

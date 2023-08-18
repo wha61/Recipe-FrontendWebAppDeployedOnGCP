@@ -1,0 +1,34 @@
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #00000021; 
+    }
+  </style>
+</head>
+<body>
+  <h1>Recipe App</h1>
+  
+  <div class="my-nav">
+    <h2>Saved Receipes</h2>
+
+    <ul>
+    <li *ngFor="let recipe of savedRecipes">
+      <a (click)="showRecipe(recipe)">{{ recipe.name }}</a>
+    </li>
+  </ul>
+  </div>
+
+  <br>
+
+</body>
+</html>
+
+  
